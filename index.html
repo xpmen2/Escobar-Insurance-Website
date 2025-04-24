@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Escobar Insurance - Tu aliado confiable para seguros de salud, vida, Medicare y más. Obtén cobertura personalizada para ti y tu familia.">
+    <title>Escobar Insurance - Tu aliado confiable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Escobar Insurance Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" data-en="Home" data-es="Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-en="Services"
+                                data-es="Servicios">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="salud.html" data-en="Health Insurance / Obamacare"
+                                        data-es="Salud / Obamacare">Salud / Obamacare</a></li>
+                                <li><a class="dropdown-item" href="vida.html" data-en="Life Insurance"
+                                        data-es="Seguro de Vida">Seguro de Vida</a></li>
+                                <li><a class="dropdown-item" href="anualidades.html" data-en="Annuities"
+                                        data-es="Anualidades">Anualidades</a></li>
+                                <li><a class="dropdown-item" href="dental.html" data-en="Dental & Vision"
+                                        data-es="Dental y Visión">Dental y Visión</a></li>
+                                <li><a class="dropdown-item" href="medicare.html" data-en="Medicare"
+                                        data-es="Medicare">Medicare</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html" data-en="About Us" data-es="Nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html" data-en="Contact" data-es="Contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown language-selector">
+                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-globe"></i> ES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="#" data-lang="es">Español</a></li>
+                                <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold" data-en="Insurance for a better family life"
+                        data-es="Seguros para una mejor vida familiar">Seguros para una mejor vida familiar</h1>
+                    <p class="lead mb-4"
+                        data-en="Your trusted partner in health. With years of experience, we offer personalized services and quality insurance options to protect your well-being."
+                        data-es="Tu socio confiable en salud. Con años de experiencia, ofrecemos servicios personalizados y opciones de seguros de calidad para proteger tu bienestar y el de tu seres queridos.">
+                        Tu socio confiable en salud. Con años de experiencia, ofrecemos servicios personalizados y
+                        opciones de seguros de calidad para proteger tu bienestar y el de tu seres queridos.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="contacto.html" class="btn btn-primary btn-lg px-4 me-md-2" data-en="Get a Quote"
+                            data-es="Obtener Cotización">Obtener Cotización</a>
+                        <a href="#servicios" class="btn btn-outline-primary btn-lg px-4" data-en="Our Services"
+                            data-es="Nuestros Servicios">Nuestros Servicios</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/hero-family.jpg" alt="Happy family with insurance"
+                        class="img-fluid rounded hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 data-en="Help and Guidance" data-es="Ayuda y Orientación">Ayuda y Orientación</h3>
+                        <p data-en="We help you understand your options and find the best coverage for your needs."
+                            data-es="Te ayudamos a entender tus opciones y encontrar la mejor cobertura para tus necesidades.">
+                            Te ayudamos a entender tus opciones y encontrar la mejor cobertura para tus necesidades.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-en="Get the Best Quote" data-es="Obtén la Mejor Cotización">Obtén la Mejor Cotización
+                        </h3>
+                        <p data-en="We work with major carriers to find you the best price for your insurance needs."
+                            data-es="Trabajamos con las principales aseguradoras para encontrarte el mejor precio para tus necesidades de seguro.">
+                            Trabajamos con las principales aseguradoras para encontrarte el mejor precio para tus
+                            necesidades de seguro.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 data-en="Find a Location" data-es="Encuentra una Ubicación">Encuentra una Ubicación</h3>
+                        <p data-en="Visit us at our convenient location or schedule a virtual consultation."
+                            data-es="Visítanos en nuestra ubicación conveniente o programa una consulta virtual.">
+                            Visítanos en nuestra ubicación conveniente o programa una consulta virtual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="awards-content p-4">
+                        <h2 class="mb-4" data-en="Elite Circle of Champions" data-es="Círculo Elite de Campeones">
+                            Círculo Elite de Campeones</h2>
+                        <p class="lead"
+                            data-en="We are excited to announce that we've achieved national recognition from CMS as an Elite member of the Marketplace Circle of Champions for 2025 after helping more than 100 consumers enroll in Marketplace coverage during Open Enrollment."
+                            data-es="Nos complace anunciar que hemos logrado reconocimiento nacional de CMS como miembro Elite del Círculo de Campeones del Mercado para 2025 después de ayudar a más de 100 consumidores a inscribirse en la cobertura del Mercado durante la Inscripción Abierta.">
+                            Nos complace anunciar que hemos logrado reconocimiento nacional de CMS como miembro Elite
+                            del Círculo de Campeones del Mercado para 2023 después de ayudar a más de 100 consumidores a
+                            inscribirse en la cobertura del Mercado durante la Inscripción Abierta.
+                        </p>
+                        <a href="#" class="btn btn-primary mt-3" data-en="Learn More" data-es="Conoce Más">Conoce
+                            Más</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="award-badge text-center">
+                        <img src="img/elite-circle-champions.png" alt="Elite Circle of Champions Badge"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services-section py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 data-en="Our Services" data-es="Nuestros Servicios">Nuestros Servicios</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card d-flex">
+                        <div class="service-icon">
+                            <img src="img/health-insurance.jpg" alt="Health Insurance" class="rounded-circle">
+                        </div>
+                        <div class="service-info">
+                            <h3 data-en="Health Insurance" data-es="Seguros de Salud">Seguros de Salud</h3>
+                            <p data-en="I have access to all of the major carriers and plans which allows me to work with you to find the health coverage that fits your needs and budget best."
+                                data-es="Tengo acceso a todos los principales proveedores y planes, lo que me permite trabajar contigo para encontrar la cobertura de salud que mejor se adapte a tus necesidades y presupuesto.">
+                                Tengo acceso a todos los principales proveedores y planes, lo que me permite trabajar
+                                contigo para encontrar la cobertura de salud que mejor se adapte a tus necesidades y
+                                presupuesto.</p>
+                            <a href="salud.html" class="btn btn-link p-0" data-en="Learn more" data-es="Leer más">Leer
+                                más <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card d-flex">
+                        <div class="service-icon">
+                            <img src="img/medicare.jpg" alt="Medicare" class="rounded-circle">
+                        </div>
+                        <div class="service-info">
+                            <h3 data-en="Medicare" data-es="Medicare">Medicare</h3>
+                            <p data-en="I'm here to help find the Medicare plan that best meets your needs and budget, saving you time and effort searching through plans."
+                                data-es="Estoy aquí para ayudarte a encontrar el plan de Medicare que mejor se adapte a tus necesidades y presupuesto, ahorrándote tiempo y esfuerzo buscando entre planes.">
+                                Estoy aquí para ayudarte a encontrar el plan de Medicare que mejor se adapte a tus
+                                necesidades y presupuesto, ahorrándote tiempo y esfuerzo buscando entre planes.</p>
+                            <a href="medicare.html" class="btn btn-link p-0" data-en="Learn more"
+                                data-es="Leer más">Leer más <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card d-flex">
+                        <div class="service-icon">
+                            <img src="img/life-insurance.jpg" alt="Life Insurance" class="rounded-circle">
+                        </div>
+                        <div class="service-info">
+                            <h3 data-en="Life Insurance" data-es="Seguro de Vida">Seguro de Vida</h3>
+                            <p data-en="Protect your loved ones with life insurance that provides financial security in case of unexpected loss."
+                                data-es="Protege a tus seres queridos con un seguro de vida que proporciona seguridad financiera en caso de pérdida inesperada.">
+                                Protege a tus seres queridos con un seguro de vida que proporciona seguridad financiera
+                                en caso de pérdida inesperada.</p>
+                            <a href="vida.html" class="btn btn-link p-0" data-en="Learn more" data-es="Leer más">Leer
+                                más <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card d-flex">
+                        <div class="service-icon">
+                            <img src="img/supplemental.jpg" alt="Supplemental Coverage" class="rounded-circle">
+                        </div>
+                        <div class="service-info">
+                            <h3 data-en="Dental & Vision" data-es="Dental y Visión">Dental y Visión</h3>
+                            <p data-en="Comprehensive dental and vision plans to keep you and your family smiling bright and seeing clearly."
+                                data-es="Planes dentales y de visión completos para mantener a ti y a tu familia sonriendo brillantemente y viendo claramente.">
+                                Planes dentales y de visión completos para mantener a ti y a tu familia sonriendo
+                                brillantemente y viendo claramente.</p>
+                            <a href="dental.html" class="btn btn-link p-0" data-en="Learn more" data-es="Leer más">Leer
+                                más <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card d-flex">
+                        <div class="service-icon">
+                            <img src="img/annuities.jpg" alt="Annuities" class="rounded-circle">
+                        </div>
+                        <div class="service-info">
+                            <h3 data-en="Annuities" data-es="Anualidades">Anualidades</h3>
+                            <p data-en="Secure your retirement with annuities that provide guaranteed income streams for your golden years."
+                                data-es="Asegura tu jubilación con anualidades que proporcionan flujos de ingresos garantizados para tus años dorados.">
+                                Asegura tu jubilación con anualidades que proporcionan flujos de ingresos garantizados
+                                para tus años dorados.</p>
+                            <a href="anualidades.html" class="btn btn-link p-0" data-en="Learn more"
+                                data-es="Leer más">Leer más <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="img/why-choose-us.png" alt="Why Choose Escobar Insurance" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-choose-content">
+                        <h2 class="mb-4" data-en="Why Choose Escobar Insurance?"
+                            data-es="¿Por qué elegir Escobar Insurance?">¿Por qué elegir Escobar Insurance?</h2>
+                        <p class="lead mb-4" data-en="Escobar Insurance is your best option"
+                            data-es="Escobar Insurance es tu mejor opción">Escobar Insurance es tu mejor opción</p>
+
+                        <div class="feature-item d-flex align-items-start mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 data-en="Access to Customized Plans" data-es="Acceso a Opciones Personalizadas">
+                                    Acceso a Opciones Personalizadas</h4>
+                                <p data-en="We offer multiple insurance options tailored to your specific needs and budget."
+                                    data-es="Te garantizamos el acceso a múltiples opciones de seguros adaptadas específicamente a tus necesidades y presupuesto.">
+                                    Te garantizamos el acceso a múltiples opciones de seguros adaptadas específicamente
+                                    a tus necesidades y presupuesto.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex align-items-start mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 data-en="Privacy and Data Security" data-es="Privacidad y Seguridad de Datos">
+                                    Privacidad y Seguridad de Datos</h4>
+                                <p data-en="Your information is treated with the highest standards of confidentiality and security."
+                                    data-es="Tu información es tratada con los más altos estándares de confidencialidad y seguridad.">
+                                    Tu información es tratada con los más altos estándares de confidencialidad y
+                                    seguridad.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 data-en="Bilingual Assistance" data-es="Asistencia Bilingüe">Asistencia Bilingüe
+                                </h4>
+                                <p data-en="We provide service in both English and Spanish to ensure clear communication."
+                                    data-es="Proporcionamos servicio tanto en inglés como en español para garantizar una comunicación clara.">
+                                    Proporcionamos servicio tanto en inglés como en español para garantizar una
+                                    comunicación clara.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Providers Section -->
+    <section class="providers-section py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 data-en="Our Insurance Providers" data-es="Nuestros Proveedores de Seguro">Nuestros Proveedores de
+                    Seguro</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/oscar.png" alt="Ambetter" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/ambetter.png" alt="Oscar" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/anthem.png" alt="Anthem" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/cigna.png" alt="Cigna" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/aetna.png" alt="Aetna" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/select-health.png" alt="Select-Health" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/molina.png" alt="Molina" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="provider-logo">
+                        <img src="img/providers/medica.png" alt="Medica" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 data-en="Testimonials" data-es="Testimonios">Testimonios</h2>
+                <div class="divider mx-auto"></div>
+                <p class="lead mt-3" data-en="What our satisfied clients say about us"
+                    data-es="Lo que nuestros clientes satisfechos dicen de nosotros">Lo que nuestros clientes
+                    satisfechos dicen de nosotros</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text"
+                            data-en="Escobar Insurance helped me find the perfect health insurance for my family. Their personalized service made the process simple and stress-free."
+                            data-es="Escobar Insurance me ayudó a encontrar el seguro de salud perfecto para mi familia. Su servicio personalizado hizo que el proceso fuera simple y sin estrés.">
+                            "Escobar Insurance me ayudó a encontrar el seguro de salud perfecto para mi familia. Su
+                            servicio personalizado hizo que el proceso fuera simple y sin estrés."</p>
+                        <div class="client-info d-flex align-items-center mt-3">
+                            <div class="client-img me-3">
+                                <img src="img/testimonials/client1.jpg" alt="Client Image" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h5 class="mb-0" data-en="Maria Rodriguez" data-es="María Rodríguez">María Rodríguez
+                                </h5>
+                                <small data-en="Health Insurance Client" data-es="Cliente de Seguro de Salud">Cliente de
+                                    Seguro de Salud</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text"
+                            data-en="I was confused about Medicare options until I found Escobar Insurance. They explained everything clearly and found me a plan that saved me money and improved my coverage."
+                            data-es="Estaba confundido acerca de las opciones de Medicare hasta que encontré Escobar Insurance. Me explicaron todo claramente y me encontraron un plan que me ahorró dinero y mejoró mi cobertura.">
+                            "Estaba confundido acerca de las opciones de Medicare hasta que encontré Escobar Insurance.
+                            Me explicaron todo claramente y me encontraron un plan que me ahorró dinero y mejoró mi
+                            cobertura."</p>
+                        <div class="client-info d-flex align-items-center mt-3">
+                            <div class="client-img me-3">
+                                <img src="img/testimonials/client2.jpg" alt="Client Image" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h5 class="mb-0" data-en="Robert Johnson" data-es="Roberto Jiménez">Roberto Jiménez</h5>
+                                <small data-en="Medicare Client" data-es="Cliente de Medicare">Cliente de
+                                    Medicare</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text"
+                            data-en="The annuity options that Escobar Insurance presented have given me peace of mind about my retirement. Their expertise and patience in explaining the benefits were exceptional."
+                            data-es="Las opciones de anualidades que presentó Escobar Insurance me han dado tranquilidad sobre mi jubilación. Su experiencia y paciencia para explicar los beneficios fueron excepcionales.">
+                            "Las opciones de anualidades que presentó Escobar Insurance me han dado tranquilidad sobre
+                            mi jubilación. Su experiencia y paciencia para explicar los beneficios fueron
+                            excepcionales."</p>
+                        <div class="client-info d-flex align-items-center mt-3">
+                            <div class="client-img me-3">
+                                <img src="img/testimonials/client3.jpg" alt="Client Image" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h5 class="mb-0" data-en="Emily Martinez" data-es="Emilia Martínez">Emilia Martínez</h5>
+                                <small data-en="Annuities Client" data-es="Cliente de Anualidades">Cliente de
+                                    Anualidades</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="cta-content text-center p-5 rounded">
+                        <h2 class="mb-3" data-en="Ready to get started?" data-es="¿Listo para comenzar?">¿Listo para
+                            comenzar?</h2>
+                        <p class="lead mb-4" data-en="Contact us today for a free consultation and quote."
+                            data-es="Contáctanos hoy para una consulta y cotización gratuita.">Contáctanos hoy para una
+                            consulta y cotización gratuita.</p>
+                        <a href="contacto.html" class="btn btn-light btn-lg" data-en="Get a Quote"
+                            data-es="Obtener Cotización">Obtener Cotización</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <img src="img/logo-white.png" alt="Escobar Insurance Logo" class="footer-logo mb-4">
+                    <p data-en="Your trusted partner for insurance solutions."
+                        data-es="Tu socio confiable para soluciones de seguros.">Tu socio confiable para soluciones de
+                        seguros.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4" data-en="Quick Links" data-es="Enlaces Rápidos">Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-en="Home" data-es="Inicio">Inicio</a></li>
+                        <li><a href="nosotros.html" data-en="About Us" data-es="Nosotros">Nosotros</a></li>
+                        <li><a href="#servicios" data-en="Services" data-es="Servicios">Servicios</a></li>
+                        <li><a href="contacto.html" data-en="Contact" data-es="Contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4" data-en="Services" data-es="Servicios">Servicios</h5>
+                    <ul class="footer-links">
+                        <li><a href="salud.html" data-en="Health Insurance" data-es="Seguro de Salud">Seguro de
+                                Salud</a></li>
+                        <li><a href="vida.html" data-en="Life Insurance" data-es="Seguro de Vida">Seguro de Vida</a>
+                        </li>
+                        <li><a href="anualidades.html" data-en="Annuities" data-es="Anualidades">Anualidades</a></li>
+                        <li><a href="dental.html" data-en="Dental & Vision" data-es="Dental y Visión">Dental y
+                                Visión</a></li>
+                        <li><a href="medicare.html" data-en="Medicare" data-es="Medicare">Medicare</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4" data-en="Contact Us" data-es="Contáctanos">Contáctanos</h5>
+                    <div class="contact-info">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                            <p class="mb-0">123 Seguro St, Suite 456<br>Miami, FL 33101</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-phone-alt me-3 mt-1"></i>
+                            <p class="mb-0">(305) 555-1234</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-envelope me-3 mt-1"></i>
+                            <p class="mb-0">info@escobarinsurance.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0" data-en="© 2025 Escobar Insurance. All rights reserved."
+                        data-es="© 2025 Escobar Insurance. Todos los derechos reservados.">© 2025 Escobar Insurance.
+                        Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="footer-legal">
+                        <li><a href="#" data-en="Privacy Policy" data-es="Política de Privacidad">Política de
+                                Privacidad</a></li>
+                        <li><a href="#" data-en="Terms of Service" data-es="Términos de Servicio">Términos de
+                                Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

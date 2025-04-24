@@ -1,0 +1,18 @@
+# Robots.txt file for Escobar Insurance Website
+# Generated on Monday, April 21, 2025
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow CSS, JS, and images
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Sitemap location
+Sitemap: https://www.escobarinsurance.com/sitemap.xml
