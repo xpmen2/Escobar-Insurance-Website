@@ -1,0 +1,244 @@
+/* 
+* Sections - Hero, Features, Services, etc.
+* =========================================
+*/
+
+/* Hero Section */
+.hero-section {
+    padding: 150px 0 100px;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.03);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+.hero-image {
+    box-shadow: var(--box-shadow-soft);
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Awards Section */
+.awards-section {
+    background: var(--background-soft);
+    position: relative;
+    padding: 80px 0;
+}
+
+.awards-content h2 {
+    color: var(--dark-color);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.awards-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--cta-orange);
+    border-radius: 2px;
+}
+
+.award-badge {
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.award-badge img {
+    max-width: 100%;
+    filter: drop-shadow(0 10px 25px rgba(43, 122, 104, 0.12));
+    transition: all 0.3s ease;
+}
+
+.award-badge:hover img {
+    filter: drop-shadow(0 15px 35px rgba(43, 122, 104, 0.18));
+    transform: translateY(-5px);
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background: var(--background-soft);
+    position: relative;
+}
+
+/* Services Section */
+.services-section {
+    padding: var(--section-padding) 0;
+    background: var(--light-color);
+    position: relative;
+}
+
+.section-title h2 {
+    position: relative;
+    color: var(--dark-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.section-title .divider {
+    height: 4px;
+    width: 70px;
+    background: var(--cta-orange);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+    padding: var(--section-padding) 0;
+    background: var(--background-soft);
+    position: relative;
+    color: var(--dark-color);
+}
+
+.why-choose-content h2 {
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.why-choose-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--cta-orange);
+    border-radius: 2px;
+}
+
+.why-choose-content .lead {
+    color: var(--gray-dark);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Providers Section */
+.providers-section {
+    padding: 80px 0;
+    background-color: var(--background-soft);
+    position: relative;
+}
+
+.providers-section .section-title h2 {
+    color: var(--dark-color);
+    display: inline-block;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: var(--section-padding) 0;
+    background-color: var(--light-color);
+}
+
+.testimonials-section .section-title h2 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.testimonials-section .lead {
+    color: var(--gray-dark);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: var(--background-soft);
+    position: relative;
+}
+
+.cta-content {
+    background: var(--light-color);
+    color: var(--dark-color);
+    box-shadow: var(--box-shadow-card);
+    border-radius: 16px;
+    position: relative;
+    padding: 50px;
+    border: 1px solid rgba(43, 122, 104, 0.06);
+}
+
+.cta-content h2 {
+    color: var(--dark-color);
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content .lead {
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-content .btn-primary {
+    background: var(--cta-orange);
+    color: white;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.25);
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+}
+
+.cta-content .btn-primary:hover {
+    background: var(--cta-orange-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.35);
+}

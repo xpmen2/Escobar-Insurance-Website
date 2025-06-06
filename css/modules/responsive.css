@@ -1,0 +1,132 @@
+/* 
+* Responsive Design y Media Queries
+* ================================
+*/
+
+@media (max-width: 1199.98px) {
+    .hero-section {
+        padding: 120px 0 80px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-collapse {
+        background-color: var(--light-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow-card);
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .hero-section {
+        padding: 100px 0 60px;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .d-md-flex {
+        justify-content: center;
+    }
+    
+    .hero-section img {
+        margin-top: 40px;
+    }
+    
+    .service-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .service-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .why-choose-content {
+        margin-top: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --section-padding: 60px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-legal {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    
+    .footer-legal li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    
+    .cta-content {
+        padding: 35px 25px;
+    }
+    
+    .feature-card {
+        padding: 25px 20px;
+    }
+    
+    .service-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 1.9rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .service-icon img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .feature-card .icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .feature-card .icon-container i {
+        font-size: 28px;
+    }
+}

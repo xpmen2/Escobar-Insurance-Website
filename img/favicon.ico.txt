@@ -1,0 +1,5 @@
+PLACEHOLDER: Favicon
+This file should be replaced with the actual favicon.ico file
+Size: 16x16, 32x32, and 48x48 pixels
+Format: ICO
+Content: Escobar Insurance logo in icon format

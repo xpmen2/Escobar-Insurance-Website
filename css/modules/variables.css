@@ -1,0 +1,52 @@
+/* 
+* Variables y Paleta de Colores ETHOS
+* ===================================
+* Paleta profesional inspirada en ETHOS para sector seguros
+*/
+
+:root {
+    /* Verde Profesional como Base (inspirado en ETHOS) */
+    --primary-color: #2B7A68;       /* Verde confianza y estabilidad */
+    --primary-dark: #1F5A4C;        /* Verde más oscuro para hover */
+    --primary-light: #F0F8F5;       /* Verde muy claro para fondos suaves */
+    
+    /* Naranja Estratégico SOLO para CTAs (como ETHOS) */
+    --cta-orange: #FF6B35;          /* Naranja vibrante para botones principales */
+    --cta-orange-hover: #E55A2B;    /* Naranja más oscuro en hover */
+    --cta-orange-light: #FFF5F2;    /* Naranja muy claro para highlights */
+    
+    /* Neutrales Profesionales y Suaves */
+    --dark-color: #2C3E50;          /* Gris azulado oscuro para texto */
+    --light-color: #ffffff;         /* Blanco puro */
+    --background-soft: #F7F9FC;     /* Azul muy pálido como fondo principal (como ETHOS) */
+    --background-alt: #F0F8F5;      /* Verde muy pálido alternativo */
+    --gray-color: #F8FAFC;          /* Gris muy claro */
+    --gray-dark: #64748B;           /* Gris medio para texto secundario */
+    --border-color: #E2E8F0;        /* Bordes sutiles */
+    
+    /* Colores de Acento Sutiles */
+    --accent-blue: #4A90E2;         /* Azul suave para elementos secundarios */
+    --accent-blue-light: #E8F4FD;   /* Azul muy claro */
+    --accent-success: #28A745;      /* Verde para elementos positivos */
+    
+    /* Gradientes MUY Sutiles (casi imperceptibles) */
+    --gradient-soft: linear-gradient(135deg, #F7F9FC 0%, #F0F8F5 100%);
+    --gradient-professional: linear-gradient(135deg, #F0F8F5 0%, #E8F5F0 100%);
+    --gradient-subtle-blue: linear-gradient(135deg, #F7F9FC 0%, #EBF4F6 100%);
+    --gradient-hero: linear-gradient(135deg, #2B7A68 0%, rgba(43, 122, 104, 0.95) 100%);
+    --gradient-warm: linear-gradient(135deg, #F7F9FC 0%, #F0F8F5 100%);
+    --gradient-accent: linear-gradient(135deg, #F7F9FC 0%, #F0F8F5 100%);
+    
+    /* Fonts */
+    --body-font: 'Nunito', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    
+    /* Spacing y elementos */
+    --section-padding: 80px;
+    --border-radius: 12px;
+    
+    /* Box Shadow Suaves */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);  /* Sombra muy suave */
+    --box-shadow-soft: 0 8px 30px rgba(43, 122, 104, 0.08); /* Sombra suave con verde */
+    --box-shadow-card: 0 2px 15px rgba(0, 0, 0, 0.04); /* Sombra para cards */
+}

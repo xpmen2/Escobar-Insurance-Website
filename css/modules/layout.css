@@ -1,0 +1,234 @@
+/* 
+* Layout - Header, Navigation y Footer
+* ===================================
+*/
+
+/* Header & Navigation */
+.navbar {
+    padding: 15px 0;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.navbar-shrink {
+    padding: 10px 0;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand img.logo {
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 80%;
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+    box-shadow: var(--box-shadow-card);
+    border-radius: var(--border-radius);
+    padding: 15px 0;
+    margin-top: 10px;
+    background: var(--light-color);
+}
+
+.navbar-nav .dropdown-item {
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--dark-color);
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.language-selector .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-light);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    border: none;
+    color: var(--primary-color);
+}
+
+.language-selector .dropdown-toggle i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #1F5A4C 0%, #2B7A68 100%);
+    color: var(--light-color);
+    position: relative;
+    padding: 60px 0 30px;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--cta-orange);
+}
+
+.footer-logo {
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--light-color);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    background-color: var(--cta-orange);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+.footer h5 {
+    color: var(--light-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--cta-orange);
+    border-radius: 3px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-links li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+.footer-links a:hover {
+    color: var(--light-color);
+    padding-left: 5px;
+}
+
+.footer-links li:hover::before {
+    color: var(--cta-orange);
+    left: 2px;
+}
+
+.contact-info i {
+    color: var(--cta-orange);
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 30px 0;
+}
+
+.footer-legal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-legal li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.footer-legal li:not(:last-child)::after {
+    content: '•';
+    position: absolute;
+    right: -12px;
+    top: 0;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: var(--light-color);
+}
